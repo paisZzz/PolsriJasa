@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PolsriJasa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="home">
+    <header class="topbar">
+      <div class="wrap nav">
+        <a class="brand" href="index.html"><span class="logo">PJ</span><span>PolsriJasa</span></a>
+        <nav class="menu" aria-label="Main navigation">
+          <a href="#top">Beranda</a>
+          <a href="#kategori">Kategori</a>
+          <a href="#list">Jasa</a>
+          <a href="post-service.html">Pasang Jasa</a>
+        </nav>
+        <div class="user-badge" id="userBadge">Tamu</div>
+        <button class="btn btn-secondary" id="logoutButton" type="button">Keluar</button>
+        <a class="btn btn-primary" href="post-service.html">Pasang Jasa</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Marketplace Civitas Politeknik Negeri Sriwijaya</span>
+            <h1>Jasa kampus yang cepat dan mudah ditemukan.</h1>
+            <p>Temukan bantuan desain, tugas, teknis, hingga les privat dari mahasiswa di lingkungan kampusmu.</p>
+
+            <div class="search-box">
+              <label for="searchInput" class="sr-only">Cari jasa</label>
+              <input id="searchInput" type="search" placeholder="Cari layanan atau penyedia..." />
+            </div>
+
+            <div class="filters" id="kategori">
+              <button class="filter-btn active" type="button" data-category="semua">Semua</button>
+              <span id="categoryFilters"></span>
+            </div>
+
+            <form id="categoryForm" class="category-form">
+              <label for="newCategory">Kelola kategori</label>
+              <div class="category-controls">
+                <input id="newCategory" type="text" maxlength="30" placeholder="Kategori baru" required />
+                <button class="btn btn-secondary" type="submit">Tambah</button>
+              </div>
+            </form>
+            <div id="categoryList" class="category-list" aria-label="Daftar kategori"></div>
+          </div>
+
+          <aside class="side-box">
+            <div class="stats">
+              <div><strong>100+</strong><span>Jasa aktif</span></div>
+              <div><strong>4.9</strong><span>Rating</span></div>
+              <div><strong>24 jam</strong><span>Respon cepat</span></div>
+              <div><strong>100%</strong><span>Mahasiswa</span></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="listing" id="list">
+        <div class="wrap">
+          <div class="head">
+            <h2>Jasa tersedia</h2>
+            <div class="count" id="count">0 jasa</div>
+          </div>
+          <div id="grid" class="grid"></div>
+          <div id="empty" class="empty">Belum ada jasa yang cocok.</div>
+        </div>
+      </section>
+
+      <section class="cs-section">
+        <div class="wrap">
+          <div class="customer-box">
+            <div class="customer-copy">
+              <span class="eyebrow eyebrow-alt">Customer Service</span>
+              <h3>Butuh bantuan atau mau tanya layanan?</h3>
+              <p>Tim PolsriJasa siap membantu kamu untuk menemukan jasa yang sesuai kebutuhan kampusmu.</p>
+            </div>
+            <div class="cs-actions">
+              <a class="btn btn-primary" href="https://wa.me/6281234567890" target="_blank" rel="noreferrer">WhatsApp</a>
+              <a class="btn btn-secondary" href="mailto:cs@polsrijasa.com">Email</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>

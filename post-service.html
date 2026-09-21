@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pasang Jasa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="form">
+    <header class="topbar">
+      <div class="wrap nav">
+        <a class="brand" href="index.html"><span class="logo">PJ</span><span>PolsriJasa</span></a>
+        <nav class="menu" aria-label="Form navigation">
+          <a href="index.html">Beranda</a>
+          <a href="index.html#list">Jasa</a>
+          <a href="post-service.html">Pasang Jasa</a>
+        </nav>
+        <div class="user-badge" id="userBadge">Tamu</div>
+        <button class="btn btn-secondary" id="logoutButton" type="button">Keluar</button>
+        <a class="btn btn-secondary" href="index.html">Lihat Jasa</a>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="wrap">
+        <section class="panel">
+          <h1>Pasang Jasa Baru</h1>
+          <p class="sub">Isi formulir berikut untuk menampilkan layananmu di marketplace kampus.</p>
+
+          <form id="form">
+            <div class="grid">
+              <div class="field full">
+                <label for="title">Judul Jasa</label>
+                <input id="title" name="title" type="text" required placeholder="Contoh: Desain Poster Akademik" />
+              </div>
+
+              <div class="field">
+                <label for="category">Kategori</label>
+                <select id="category" name="category" required>
+                  <option value="">Pilih kategori</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="sellerName">Nama</label>
+                <input id="sellerName" name="sellerName" type="text" required placeholder="Nama Anda" />
+              </div>
+
+              <div class="field">
+                <label for="whatsapp">WhatsApp</label>
+                <input id="whatsapp" name="whatsapp" type="tel" required placeholder="6281234567890" />
+              </div>
+
+              <div class="field">
+                <label for="price">Harga</label>
+                <input id="price" name="price" type="number" min="1" required placeholder="25000" />
+              </div>
+
+              <div class="field">
+                <label for="unit">Satuan</label>
+                <input id="unit" name="unit" type="text" required placeholder="per dokumen" />
+              </div>
+
+              <div class="field full">
+                <label for="imageUrl">URL Gambar</label>
+                <input id="imageUrl" name="imageUrl" type="url" required placeholder="https://example.com/image.jpg" />
+              </div>
+
+              <div class="field full">
+                <label for="description">Deskripsi</label>
+                <textarea id="description" name="description" minlength="20" maxlength="600" required placeholder="Jelaskan hasil yang ditawarkan, cakupan pekerjaan, estimasi pengerjaan, dan aturan revisi..."></textarea>
+              </div>
+            </div>
+
+            <div class="actions">
+              <a class="btn btn-secondary" href="index.html">Batal</a>
+              <button class="btn btn-primary" type="submit">Simpan Jasa</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
